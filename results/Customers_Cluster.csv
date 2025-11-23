@@ -1,0 +1,7 @@
+,cluster_kmeans,Age,Annual Income (k$),Spending Score (1-100),Cluster_Desc
+0,0,41.26470588235294,88.5,16.764705882352942,"High Income, Low Spending"
+1,1,32.69230769230769,86.53846153846153,82.12820512820512,"High Income, High Spending (Top Clients)"
+2,2,45.523809523809526,26.285714285714285,19.38095238095238,"Low Income, Low Spending"
+3,3,27.0,56.6578947368421,49.13157894736842,"Mid Income, Moderate Spending (Young Adults)"
+4,4,56.333333333333336,54.266666666666666,49.06666666666667,"Mid Income, Moderate Spending (Older Adults)"
+5,5,25.0,25.26086956521739,77.6086956521739,"Low Income, High Spending (Young Spenders)"
