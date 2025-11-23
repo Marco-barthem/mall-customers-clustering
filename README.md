@@ -1,90 +1,81 @@
 # Customer Segmentation Analysis for Retail (Python + Power BI)
 
 ## Executive Summary
-Mall customers behave differently depending on their age, income level, and buying habits. Treating everyone the same often leads to wasted marketing budget and low engagement.
+Marketing performance was limited due to lack of structured customer segmentation.  
+Using Python (EDA + K-Means) and Power BI, I analyzed 200 mall customers and identified **six distinct behavioral groups**.
 
-Using Python (EDA + K-Means) and Power BI, I segmented 200 mall customers into **six behavioral clusters**.  
-These clusters reveal clear opportunities to improve targeting, personalize communication, and increase customer engagement.
+The analysis shows opportunities to improve engagement and campaign efficiency by:
+- Prioritizing **high-income, high-spending customers**
+- Re-engaging **high-income but low-spending profiles**
+- Using targeted promotions for **young impulsive buyers**
 
-The greatest opportunities identified were:
-- Prioritizing **high-income, high-spending customers** with premium offers  
-- Re-engaging **high-income but low-spending** customers  
-- Creating promotions for **young impulsive buyers**  
-
-This segmentation gives marketing teams a data-driven view of who their customers are and how to communicate with them effectively.
+This segmentation provides a clear, data-driven understanding of customer behavior.
 
 ---
 
 ## Business Problem
-Marketing and product teams lacked visibility into customer behavior.  
-Although the company had basic customer attributes — **age, gender, income level, and spending score** — this information was not structured into meaningful segments that could guide strategic decisions.
+The company had basic customer data (age, gender, income, spending score), but **no segmentation** to support marketing decisions.
 
-Key questions the business needed answered:
-- What types of customers exist in our mall?
-- Which groups show the highest spending potential?
-- How do age and income influence purchasing behavior?
-- How can we target different customer types with more precision?
+Stakeholders needed clarity on:
+- Who are the main customer groups?
+- Which segments offer the highest value?
+- Where can engagement and spending be improved?
 
-This project uses clustering and dashboard analytics to transform raw customer data into actionable insights and meaningful customer segments.
+This project transforms raw customer data into actionable segments.
 
 ---
 
 ## Methodology
-
-### Python (EDA + Clustering)
-- Explored distributions of age, income, and spending score  
-- Created pairplots and scatterplots to visualize relationships  
-- Applied **K-Means with 6 clusters**  
-- Profiled each segment using median behavior metrics  
-
-### Power BI (Business Visualization)
-- Built a dashboard showing:
-  - Total customers  
-  - Average age, income, and spending score  
-  - Customer distribution by generation and gender  
-  - Cluster heatmap (Cluster × Generation)  
+- EDA in Python to analyze age, income and spending score  
+- K-Means clustering (**K = 6**) validated with Elbow & Silhouette  
+- Behavioral profiling using median values per cluster  
+- Power BI dashboard summarizing KPIs, demographics, and cluster distribution  
 
 ---
 
-## Skills Demonstrated
-- **Python:** Pandas, Scikit-Learn, Matplotlib, Seaborn  
-- **Machine Learning:** K-Means clustering, model evaluation  
-- **Power BI:** DAX, calculated columns, ETL, KPI design  
-- **Data Storytelling:** cluster profiling, insights, recommendations  
+## Skills
+**Python:** Pandas, Scikit-Learn, Matplotlib, Seaborn  
+**Power BI:** DAX, modeling, KPIs, interactive visuals  
+**Machine Learning:** K-Means clustering, scaling, evaluation  
 
 ---
 
 ## Results & Business Recommendations
 
-### Final Customer Segments
-1. **High Income, High Spending (Top Clients)**  
-2. **High Income, Low Spending**  
-3. **Low Income, High Spending (Young Spenders)**  
-4. **Low Income, Low Spending**  
-5. **Mid Income, Moderate Spending (Older Adults)**  
-6. **Mid Income, Moderate Spending (Young Adults)**
+#### Final Customer Segments (Median Values)
+
+| Cluster | Age | Annual Income (k$) | Spending Score (1-100) | Cluster Description |
+|--------:|-----:|--------------------:|-------------------------:|------------------------------|
+| **0** | 41.26 | 88.50 | 16.76 | High Income, Low Spending |
+| **1** | 32.69 | 86.54 | 82.13 | High Income, High Spending (Top Clients) |
+| **2** | 45.52 | 26.29 | 19.38 | Low Income, Low Spending |
+| **3** | 27.00 | 56.66 | 49.13 | Mid Income, Moderate Spending (Young Adults) |
+| **4** | 56.33 | 54.27 | 49.07 | Mid Income, Moderate Spending (Older Adults) |
+| **5** | 25.00 | 25.26 | 77.61 | Low Income, High Spending (Young Spenders) |
+
 
 ![Customer Clusters](results/Customers_Cluster.png)
 
+![Customer Clusters](results/Dashboard.gif)
 
-### Business Recommendations
-- Launch exclusive programs for top spenders  
-- Create reactivation campaigns for high-income customers with low spending  
-- Use promotional campaigns for younger impulse-driven buyers  
-- Maintain consistent value-driven communication for older moderate spenders  
 
-These actions can increase engagement, improve conversion, and optimize marketing spend.
+This segmentation makes it possible to direct marketing efforts toward the customers who truly matter.
+
+Key outcomes:
+- Campaigns can now be targeted toward **high-value segments**, instead of treating all customers the same  
+- **Marketing costs decrease**, since investments can focus on the groups with higher spending potential  
+- **Engagement increases** by delivering the right message to the right customer  
+- High-income low spenders can be reactivated with personalized strategies  
+- Young impulsive buyers become an opportunity for promotional and short-term campaigns  
+
+Overall, this segmentation enables more efficient budget allocation, reduces wasted ad spend, and improves the effectiveness of sales and marketing initiatives.
 
 ---
 
 ## Next Steps
-
-### Business
 - Run A/B tests targeting specific clusters  
 - Create personalized marketing flows  
-- Monitor segment evolution monthly  
+- Track cluster performance through KPIs  
 
 ---
-
-## Project Structure
 
