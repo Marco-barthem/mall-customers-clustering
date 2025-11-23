@@ -56,7 +56,7 @@ This project transforms raw customer data into actionable segments.
 
 ![Customer Clusters](results/Customers_Cluster.png)
 
-![Customer Clusters](results/Dashboard.gif)
+![Customer Clusters](results/Dashboard_image.png)
 
 
 This segmentation makes it possible to direct marketing efforts toward the customers who truly matter.
